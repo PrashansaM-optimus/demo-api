@@ -1,0 +1,23 @@
+{
+  "name": "demo-api",
+  "version": "1.0.0",
+  "description": "This project demonstrate creation of rest api and connecting them with mongo db",
+  "main": "index.js",
+  "scripts": {
+    "watch-ts": "tsc -watch",
+    "watch-node": "nodemon dist/app.js",
+    "start": "concurrently \"npm run watch-ts\" \"npm run watch-node\""
+  },
+  "author": "Prashansa",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.1",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "install": "^0.13.0",
+    "mongoose": "^5.6.9",
+    "nodemon": "^1.19.1",
+    "typescript": "^3.5.3"
+  }
+}
